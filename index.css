@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    background-color: #DEDBE7;
+    /* width: 550px;
+    height: 729px;
+    margin-top: 126px;
+    margin-left: 120px;
+    border: 1px solid purple; */
+}
+
+:root {
+  /* Primary colors */
+    --clr-primary: #6943FF;        /* Main color */
+    --clr-primary-light: #B295FF;  /* Lighter variant of primary */
+    
+    /* Background colors */
+    --clr-bg-light: #F4F4F4;       /* Light background */
+    --clr-bg-dark: #1F2937;        /* Dark background */
+    
+    /* Card colors */
+    --clr-card-light: #FFFFFF;     /* Light card */
+    --clr-card-dark: #273549;      /* Dark card */
+
+    /* Text colors */
+    --clr-text-light: #FFFFFF;     /* Light text */
+    --clr-text-dark: #353535;      /* Dark text */
+    
+    /* Supporting text colors */
+    --clr-sup-text-light: #5A537B; /* Light supporting text */
+    --clr-sup-text-dark: #CCC1FF;  /* Dark supporting text */
+
+    /* Result text colors */
+    --clr-result-light: #353535;   /* Light result text */
+    --clr-result-dark: #FFFFFF;    /* Dark result text */
+}
+
+.lightmode {
+    --clr-primary: #6943FF;        
+    --clr-primary-light: #B295FF;  
+    /* --clr-bg-light: #F4F4F4;   doen't change*/
+    --clr-bg-dark: #F4F4F4;        
+    /* --clr-card-light: #FFFFFF;  doen't change*/
+    --clr-card-dark: #FFFFFF;      
+    --clr-text-light: #FFFFFF;     
+    --clr-text-dark: #353535;      
+    /* --clr-sup-text-light: #5A537B;  doen't change*/
+    --clr-sup-text-dark: #5A537B;  
+    /* --clr-result-light: #353535;   doen't change*/
+    --clr-result-dark: #353535;    
+}
+
+#main-container {
+    width: 550px;
+    height: 729px;
+    margin: 50px auto;
+    background: var(--clr-bg-dark);
+}
+
+#conv-div {
+    width: 100%;
+    margin-bottom: 36px;
+    padding: 0;
+    box-sizing: border-box;
+    height: 285px;
+    border: 1px solid;
+    background: var(--clr-primary);
+}
+
+.heading {
+    width: 448.4px;
+    height: 38px;
+    margin: 33px auto;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 38px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--clr-text-light);
+}
+
+#input-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 117px;
+    height: 83px;
+    margin: 30px auto;
+    /* resize: both;
+    overflow: auto; */
+    border: 2px solid var(--clr-primary-light);
+    border-radius: 5px;
+}
+
+#input {
+    width: fit-content;
+    box-sizing: border-box;
+    height: 51.23px;
+    font-family: Inter;
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 24.39px;
+    text-align: center;
+    background: none;
+    color: var(--clr-text-light);
+    border: none;
+}
+
+#convert-btn {
+    display: flex;
+    width: 117px;
+    height: 42px;
+    margin: 25px auto;
+    padding: 9px 27.5px 9px 27.5px;
+    border-radius: 5px;
+    border: none;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: var(--clr-text-dark);
+}
+
+.conv-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 108.57px;
+    margin: auto 25px 23.43px;
+    top: 321px;
+    left: 25px;
+    gap: 18.72px;
+    border-radius: 4.68px;
+    /* border: 1px solid seagreen; */
+    background: var(--clr-card-dark)
+}
+
+.unit-text {
+    width: 346px;
+    height: 25px;
+    margin: 31px 77px 4.85px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    color: var(--clr-sup-text-dark);
+}
+
+.result-text {
+    width: 400px;
+    height: 25px;
+    margin: 0 77px 18.57px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: var(--clr-result-dark);
+}
+
+.light-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: var(--clr-primary);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
