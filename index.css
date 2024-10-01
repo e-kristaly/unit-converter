@@ -109,6 +109,7 @@ body {
 @media (max-width: 350px) {
     #input {
         font-size: 16px; /* Adjust the font size */
+        line-height: 12px;
     }
 }
 
