@@ -106,7 +106,7 @@ body {
     border: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 350px) {
     #input {
         font-size: 16px; /* Adjust the font size */
     }
