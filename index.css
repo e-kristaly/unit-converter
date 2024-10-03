@@ -1,7 +1,6 @@
 body {
     margin: 0;
     background-color: #DEDBE7;
-    max-width: 302px;
     /* width: 550px;
     height: 729px;
     margin-top: 126px;
@@ -107,12 +106,12 @@ body {
     border: none;
 }
 
-/* @media (max-width: 350px) {
+@media (max-width: 350px) {
     #input {
-        font-size: 16px; Adjust the font size */
-        /* line-height: 12px;
+        font-size: 16px; /* Adjust the font size */ 
+        line-height: 12px;
     }
-} */
+}
 
 #convert-btn {
     display: flex;
